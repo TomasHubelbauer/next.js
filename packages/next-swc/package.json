@@ -13,7 +13,8 @@
     "cache-build-native": "echo $(ls native)",
     "get-test-timings": "node ../../run-tests.js --timings --write-timings -g 1/1",
     "rust-check": "cd ../../; cargo fmt -- --check && cargo clippy --all -- -D warnings -A deprecated && cargo check -p next-dev --no-default-features --features cli,custom_allocator,rustls-tls,__internal_nextjs_integration_test",
-    "test-cargo-unit": "cargo test --workspace --exclude next-dev-tests"
+    "test-cargo-unit": "cargo test --workspace --exclude next-dev-tests",
+    "bump": "echo 4"
   },
   "napi": {
     "name": "next-swc",
